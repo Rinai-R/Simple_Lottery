@@ -6,7 +6,7 @@ MySQL的表有以下：
 ![QQ_1733222574937](https://github.com/user-attachments/assets/04644e58-7a2a-4092-a3b7-4708f108adc4)
 
 lottery_events的表:
-![QQ_1733222549246](https://github.com/user-attachments/assets/c6c8a615-d5a3-4137-a4ca-e083ec89d7d6)4
+![QQ_1733222549246](https://github.com/user-attachments/assets/c6c8a615-d5a3-4137-a4ca-e083ec89d7d6)
 
 prizes的表:
 ![QQ_1733222628260](https://github.com/user-attachments/assets/266401d6-fe9c-4a98-90b6-c151cdfadd2e)

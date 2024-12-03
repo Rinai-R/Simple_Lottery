@@ -1,0 +1,34 @@
+1.
+SELECT * FROM employees WHERE DATEDIFF(CURDATE(),hire_date) < 365;
+
+2.
+SELECT department, AVG(salary) AS AVR FROM employees GROUP BY department;
+
+3.
+SELECT * FROM employees WHERE DATEDIFF(CURDATE(),hire_date) >3650 AND salary > 5002;
+
+4.
+UPDATE employees SET salary = salary * 0.9 WHERE status = 'on_leave';
+
+5.
+(1).SELECT department, MAX(salary) as max_salary FROM employees GROUP BY department
+
+(2).SELECT x.id, x.department, x.salary AS max_salary FROM employees x
+JOIN ( SELECT department, MAX(salary) AS max_salary FROM employees GROUP BY department) AS max_salaries
+ON x.department = max_salaries.department AND x.salary = max_salaries.max_salary;
+
+6.
+SELECT * FROM employees x WHERE x.id IN( SELECT id FROM employees GROUP BY id HAVING COUNT(DISTINCT department) = 2);
+
+7.
+DELETE FROM employees WHERE status = 'on_leave';
+
+8.
+SELECT * FROM employees x WHERE x.id IN ( SELECT manager_id FROM employees);
+
+9.
+SELECT * FROM employees WHERE DATEDIFF(CURDATE(), updated_at) < 30;
+
+10.
+找编号1员工的上司：SELECT * FROM employees x WHERE x.id IN (SELECT manager_id FROM employees WHERE id = 1);
+找编号2员工的下属：SELECT * FROM employees x WHERE x.manager_id = 2;

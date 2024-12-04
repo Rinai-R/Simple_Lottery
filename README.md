@@ -1,4 +1,6 @@
 # Simple_Lottery
+详细的代码讲解可以看我的博客：https://blog.csdn.net/qq_60409213/article/details/144221927?spm=1001.2014.3001.5501
+
 蓝山MySQL课的作业
 写了一天多，记录一下吧.
 MySQL的表有以下：
